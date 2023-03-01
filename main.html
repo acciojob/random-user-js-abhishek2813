@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head> 
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
 <body>
-    <div class="head">
-    <div class="container">
-        <div class="main">
-            <div class="heading"><h1>Informations</h1></div>
-            <div id="info">
-                <div id="img"></div>
-            <h1 id="first"></h1>
-        </div>
-        </div> <br><br><br>
-            <h1 id="btnval"></h1>
-        <div class="btoon">
-        <button id="btn1">EMAIL</button>
-        <button id="btn2">PHONE</button>
-        <button id="btn3">AGE</button>
-        <div class="finalbtn"> 
-            <button id="final">getUser</button>  
-        </div>
-       
-    </div>
-    
-    </div>
-</div>
+	<!-- the entire body must be written by student -->
+	<div class="container">
+		<div class="info">
+			<div id="name" class="name"> </div>
+			<img id="image" alt="" width="140 px" height="140 px">
+
+		</div>
+		<div class="print">
+			<section id="infosection"> </section>
+			<div class="button">
+				<button type="button" onclick="showAge();" data-attr="age" value="age"
+					class="btn btn-success">Age</button>
+				<button type="button" onclick="showEmail();" data-attr="email" value="email"
+					class="btn btn-warning">Email</button>
+				<button type="button" onclick="showPhone();" data-attr="phone" value="phone"
+					class="btn btn-primary">Phone Number</button>
+				<button type="button" onclick="showUserDetails();" id="getUser" value="phone" class="btn btn-info">Get
+					New User</button>
+
+			</div>
+
+		</div>
 
 
 
-    <script src="index.js"></script>
+		<script type="text/javascript" src="./script.js">
+		</script>
+
 </body>
+
 </html>
